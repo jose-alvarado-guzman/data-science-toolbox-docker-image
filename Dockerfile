@@ -47,7 +47,7 @@ RUN echo "source /usr/local/bin/virtualenvwrapper.sh" >> ${HOME}/.bashrc \
 
 ENV PIP_REQUIRE_VIRTUALENV="true"
 
-RUN /bin/bash -c "source /usr/local/bin/virtualenvwrapper.sh && mkproject DS_Training && pip install ipykernel matplotlib plotnine scikit-learn && ipython kernel install --user --name=Python3_DS_Training && mv ${HOME}/fuel_efficiency_analysis_using_R.ipynb . && mv ${HOME}/fuel_efficiency_analysis_using_python.ipynb . && mv ${HOME}/housing_price_ml.ipynb ."
+RUN /bin/bash -c "source /usr/local/bin/virtualenvwrapper.sh && mkproject DS_Training && pip install -r ${HOME}/requirements.txt && ipython kernel install --user --name=Python3_DS_Training && mv ${HOME}/fuel_efficiency_analysis_using_R.ipynb . && mv ${HOME}/fuel_efficiency_analysis_using_python.ipynb . && mv ${HOME}/housing_price_ml.ipynb ."
 
 EXPOSE 8888
 
