@@ -13,6 +13,9 @@ jupyter-core==4.6.3
 kiwisolver==1.2.0
 matplotlib==3.2.1
 mizani==0.6.0
+neo4j==1.7.6
+neobolt==1.7.17
+neotime==1.7.4
 numpy==1.18.4
 palettable==3.3.0
 pandas==1.0.3
